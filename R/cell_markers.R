@@ -90,8 +90,8 @@ convert_symbol <- function(genesig = NULL, to = "mouse"){
   }
   require("biomaRt")
   #biomRt_path <- paste(file.path(system.file('examples', package='enrichCellMarkers')), "biomRt_input.Rdata", sep="/")
-  load(mouse)
-  load(human)
+  data(mouse, package = "sc.utils")
+  data(human, package = "sc.utils")
   if (to == "mouse") {
     genesig_res <- getLDS(attributes = c("hgnc_symbol"),filters = "hgnc_symbol",
                           values = genesig, mart = human,
