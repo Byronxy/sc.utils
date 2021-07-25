@@ -7,8 +7,8 @@
 #' @param legend whether use legend, default: FALSE
 #' @param reduction what is the reduction, default: umap
 #'
-#' @return  a ggplot2 object
-#'
+#' @return  a `ggplot2` object
+#' @import Seurat, ggplot2
 #'
 #' @export
 #'
@@ -20,7 +20,7 @@ FeaturePlot_gene_pos <- function(object,
                                  legend = FALSE,
                                  reduction = "umap"){
   stopifnot(length(gene) == 1)
-  p = FeaturePlot(object,
+  p = Seurat::FeaturePlot(object,
                   features = gene,
                   order = T,
                   reduction = reduction)
