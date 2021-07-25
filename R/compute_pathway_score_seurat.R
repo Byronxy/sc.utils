@@ -1,4 +1,4 @@
-library(Seurat)
+# library(Seurat)
 
 #' Run pathway score pipeline
 #' @param object Pipeline object
