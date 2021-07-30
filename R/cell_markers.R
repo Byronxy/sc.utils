@@ -59,10 +59,9 @@ CMenrich = function (gene.list,species)
 
 }
 
-#' Convert list to gmt file
+#' @title Convert list to gmt file
 #' @param geneSet a list object
 #' @param gmt_file output file name .gmt
-#'
 #' @export
 #'
 write.gmt <- function(geneSet= NULL,gmt_file= NULL){
@@ -78,8 +77,7 @@ write.gmt <- function(geneSet= NULL,gmt_file= NULL){
 }
 
 
-#' Covert between mouse and human symbols
-#'
+#' @title Covert between mouse and human symbols
 #' @param genesig vector, gene signature
 #' @param to 'human' or 'mouse'
 #' @export

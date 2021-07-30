@@ -27,7 +27,7 @@ FeaturePlot_gene_pos(
 \item{reduction}{what is the reduction, default: umap}
 }
 \value{
-a ggplot2 object
+a `ggplot2` object
 }
 \description{
 Function to plot postive cells or negative cells with two colors

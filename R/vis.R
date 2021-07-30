@@ -1,15 +1,13 @@
-#' Function to plot postive cells or negative cells with two colors
-#'
+#' @title Function to plot postive cells or negative cells with two colors
 #' @param object Seurat object
 #' @param gene gene name
 #' @param cutoff cutoff
 #' @param color_value color value  c("grey","red")
 #' @param legend whether use legend, default: FALSE
 #' @param reduction what is the reduction, default: umap
-#'
-#' @return  a `ggplot2` object
-#' @import Seurat, ggplot2
-#'
+#' @return a `ggplot2` object
+#' @import Seurat
+#' @import ggplot2
 #' @export
 #'
 #'
