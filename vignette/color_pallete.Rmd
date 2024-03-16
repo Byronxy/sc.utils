@@ -1,0 +1,16 @@
+---
+title: "color_pallete"
+author: "Yi Xiong"
+date: "2024-03-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+devtools::install_github("Winnie09/Palo")
+
+```
