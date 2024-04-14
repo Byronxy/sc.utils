@@ -29,16 +29,16 @@ This is a basic example which shows you how to solve a common problem:
 
 ### Cell Marker Database
 
-| FileName            | Description                                                                         | Usage                                                                                 | ID Format |
-|---------------------|-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|-----------|
-| All cell markers    | All cell markers of different cell types from different tissues in human and mouse. | data(“cell\_markers\_all\_entrez”,package = “sc.utils”, envir = environment())        | EntrezID  |
-| All cell markers    | All cell markers of different cell types from different tissues in human and mouse. | data(“cell\_markers\_all\_symbal”,package = “sc.utils”, envir = environment())        | SymbolID  |
-| Human cell markers  | Cell markers of different cell types from different tissues in human.               | data(“cell\_markers\_human\_entrez”,package = “sc.utils”, envir = environment())      | EntrezID  |
-| Human cell markers  | Cell markers of different cell types from different tissues in human.               | data(“cell\_markers\_human\_symbal”,package = “sc.utils”, envir = environment())      | SymbolID  |
-| Mouse cell markers  | Cell markers of different cell types from different tissues in mouse.               | data(“cell\_markers\_mouse\_entrez”,package = “sc.utils”, envir = environment())      | EntrezID  |
-| Mouse cell markers  | Cell markers of different cell types from different tissues in mouse.               | data(“cell\_markers\_mouse\_symbal”,package = “sc.utils”, envir = environment())      | SymbolID  |
-| Single cell markers | Cell markers derived from single-cell sequencing researches in human and mouse.     | data(“cell\_markers\_singlecell\_entrez”,package = “sc.utils”, envir = environment()) | EntrezID  |
-| Single cell markers | Cell markers derived from single-cell sequencing researches in human and mouse.     | data(“cell\_markers\_singlecell\_symbal”,package = “sc.utils”, envir = environment()) | SymbolID  |
+| FileName            | Description                                                                         | Usage                                                                              | ID Format |
+|---------------------|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|-----------|
+| All cell markers    | All cell markers of different cell types from different tissues in human and mouse. | data(“cell_markers_all_entrez”,package = “sc.utils”, envir = environment())        | EntrezID  |
+| All cell markers    | All cell markers of different cell types from different tissues in human and mouse. | data(“cell_markers_all_symbal”,package = “sc.utils”, envir = environment())        | SymbolID  |
+| Human cell markers  | Cell markers of different cell types from different tissues in human.               | data(“cell_markers_human_entrez”,package = “sc.utils”, envir = environment())      | EntrezID  |
+| Human cell markers  | Cell markers of different cell types from different tissues in human.               | data(“cell_markers_human_symbal”,package = “sc.utils”, envir = environment())      | SymbolID  |
+| Mouse cell markers  | Cell markers of different cell types from different tissues in mouse.               | data(“cell_markers_mouse_entrez”,package = “sc.utils”, envir = environment())      | EntrezID  |
+| Mouse cell markers  | Cell markers of different cell types from different tissues in mouse.               | data(“cell_markers_mouse_symbal”,package = “sc.utils”, envir = environment())      | SymbolID  |
+| Single cell markers | Cell markers derived from single-cell sequencing researches in human and mouse.     | data(“cell_markers_singlecell_entrez”,package = “sc.utils”, envir = environment()) | EntrezID  |
+| Single cell markers | Cell markers derived from single-cell sequencing researches in human and mouse.     | data(“cell_markers_singlecell_symbal”,package = “sc.utils”, envir = environment()) | SymbolID  |
 
 ``` r
 #entrez
@@ -64,9 +64,9 @@ data("cell_markers_singlecell_symbal",package = "sc.utils", envir = environment(
 
 #### gmt file
 
--   gbm\_single\_cell\_geneset.gmt
+- gbm_single_cell_geneset.gmt
 
--   SHH\_MB\_hg\_signature.gmt
+- SHH_MB_hg_signature.gmt
 
 <!-- end list -->
 
@@ -98,6 +98,15 @@ data("gbm_single_cell_geneset_list",package = "sc.utils", envir = environment())
 #shh-mg signature
 data("shh_mb_hg_single_cell_geneset_list",package = "sc.utils", envir = environment())
 data("shh_mb_mm_single_cell_geneset_list",package = "sc.utils", envir = environment())
+```
+
+To avoid unexpected noise and expression artefacts by dissociation, a
+total of 1,514 genes associated with mitochondria (50 genes), heat-shock
+protein (178 genes), ribosome (1,253 genes) and dissociation (33 genes)
+were excluded.
+
+``` r
+data("gs_MT_HSP_RB_DS",package = "sc.utils", envir = environment())
 ```
 
 ### Useful Function

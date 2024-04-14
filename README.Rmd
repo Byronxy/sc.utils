@@ -111,6 +111,10 @@ data("gbm_single_cell_geneset_list",package = "sc.utils", envir = environment())
 data("shh_mb_hg_single_cell_geneset_list",package = "sc.utils", envir = environment())
 data("shh_mb_mm_single_cell_geneset_list",package = "sc.utils", envir = environment())
 ```
+To avoid unexpected noise and expression artefacts by dissociation, a total of 1,514 genes associated with mitochondria (50 genes), heat-shock protein (178 genes), ribosome (1,253 genes) and dissociation (33 genes) were excluded.
+``` r
+data("gs_MT_HSP_RB_DS",package = "sc.utils", envir = environment())
+```
 
 ### Useful Function
 
